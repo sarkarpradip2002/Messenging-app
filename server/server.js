@@ -3,6 +3,9 @@ const io=require('socket.io')(4000,{
         origin: "*"
     }
 });
+const express=require('express')
+const app=express();
+const port=process.env.PORT;
 
 console.log("The port is 4000");
 const users={};
@@ -22,4 +25,7 @@ io.on('connection',socket =>{
         delete users[socket.id];
     });
 
+})
+app.listen(port,()=>{
+    console.log(`Listening on the port ${port}`);
 })
