@@ -26,6 +26,3 @@ io.on('connection',socket =>{
     });
 
 })
-app.listen(port,()=>{
-    console.log(`Listening on the port ${port}`);
-})
