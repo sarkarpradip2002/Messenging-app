@@ -1,0 +1,107 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    background-image: linear-gradient(#7dbf7d,#313131);
+}
+
+#image{
+    height: 40px;
+    display: block;
+    margin: auto;
+    margin-top: 15px;
+    border-radius: 48px;
+}
+
+#heading{
+    display: flex;
+    justify-content: center;
+}
+
+h2{
+    text-align: center;
+    border: 2px solid green;
+    display: inline-block;
+    margin: 12px;
+    padding: 10px;
+    background-image: linear-gradient(45deg, #ded67a, #67ec71);
+    border-radius: 30px;
+    color: #36077b;
+    margin-bottom: 3px;
+}
+
+#totalspace{
+    height: 599px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#chatspace{
+    border: 2px solid green;
+    width: 693px;
+    height: 576px;
+    margin: auto;
+    margin-top: 10px;
+    position: absolute;
+}
+
+#chatspace::before{
+    content: "";
+    position: absolute;
+    background: url(../background.jpg) center center/cover no-repeat;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 1.0;
+}
+
+.message{
+    margin-top: 13px;
+    background-color: #6eb96e;
+    padding: 7px;
+    border-radius: 19px;
+}
+
+.right{
+    float: right;
+    clear: both;
+    margin-right: 8px;
+    border-top-right-radius: 0px;
+}
+
+.left{
+    float: left;
+    clear: both;
+    margin-left: 8px;
+    border-top-left-radius: 0px;
+}
+
+.joined{
+    color: white;
+    display: block;
+    clear: both;
+    text-align: center;
+}
+
+#sendmessage{
+    display: flex;
+    justify-content: center;
+}
+
+#messageinput{
+    width: 57%;
+    padding: 6px;
+    background-color: #87b18b;
+    border: 1px solid green;
+    border-radius: 14px;
+}
+
+#submit{
+    margin-left: 5px;
+    background-color: black;
+    color: cyan;
+    border-radius: 12px;
+    padding: 8px;
+    cursor: pointer;
+}
+
