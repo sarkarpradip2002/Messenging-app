@@ -1,4 +1,4 @@
-const socket=io("sarkarpradip2002/Messenging-app ");
+const socket=io("https://group-messenging.herokuapp.com/");
 
 const messageappend=document.getElementById('chatspace');
 const inputmessage=document.getElementById('messageinput');
