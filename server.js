@@ -2,7 +2,7 @@ const express=require('express')
 const app=express();
 const port=process.env.PORT || 4000;
 app.use(express.static('static'));
-const http=require('http').Server(port);
+const http=require('http').Server(app);
 
 const io=require('socket.io')(http,{
     cors:{
@@ -33,4 +33,4 @@ io.on('connection',socket =>{
 
 })
 
-app.listen(port);
+http.listen(port);
