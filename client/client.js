@@ -1,4 +1,4 @@
-const socket=io("http://localhost:4000");
+const socket=io("sarkarpradip2002/Messenging-app ");
 
 const messageappend=document.getElementById('chatspace');
 const inputmessage=document.getElementById('messageinput');

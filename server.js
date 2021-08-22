@@ -3,9 +3,8 @@ const io=require('socket.io')(4000,{
         origin: "*"
     }
 });
-const express=require('express')
-const app=express();
-const port=process.env.PORT;
+
+const port=process.env.PORT || 4000;
 
 console.log("The port is 4000");
 const users={};
@@ -26,3 +25,5 @@ io.on('connection',socket =>{
     });
 
 })
+
+io.listen(port);
