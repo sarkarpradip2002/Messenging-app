@@ -1,11 +1,18 @@
+const express=require('express')
+const app=express();
 const port=process.env.PORT || 4000;
-const io=require('socket.io')(port,{
+app.use(express.static('static'));
+const http=require('http').Server(port);
+
+const io=require('socket.io')(http,{
     cors:{
         origin: "*"
     }
 });
 
-
+app.get('/',(req,res)=>{
+    res.sendFile(__dirname + '/index.html');
+})
 console.log("The port is 4000");
 const users={};
 

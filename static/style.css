@@ -48,7 +48,7 @@ h2{
 #chatspace::before{
     content: "";
     position: absolute;
-    background: url(../background.jpg) center center/cover no-repeat;
+    background: url(background.jpg) center center/cover no-repeat;
     width: 100%;
     height: 100%;
     z-index: -1;
